@@ -1,12 +1,12 @@
 {
-  "name": "@uiw/react-monorepo-template",
-  "version": "1.1.0",
+  "name": "@uiw/react-head",
+  "version": "0.0.1",
   "description": "Simple React package development project example template..",
   "author": "Kenny Wong <wowohoo@qq.com>",
-  "homepage": "https://uiwjs.github.io/react-monorepo-template",
+  "homepage": "https://uiwjs.github.io/react-head",
   "repository": {
     "type": "git",
-    "url": "https://github.com/uiwjs/react-monorepo-template.git"
+    "url": "https://github.com/uiwjs/react-head.git"
   },
   "license": "MIT",
   "main": "./cjs/index.js",
@@ -22,12 +22,12 @@
     "access": "public"
   },
   "keywords": [
-    "react-monorepo-template",
+    "react-head",
     "react.js",
     "react",
     "template",
     "monorepo",
-    "monorepo-template",
+    "head",
     "uiw",
     "uiw-react",
     "react-component",

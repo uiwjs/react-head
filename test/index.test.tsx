@@ -1,13 +1,13 @@
-/**
- * @jest-environment jsdom
- */
 import { render, screen } from '@testing-library/react';
 import '@testing-library/jest-dom';
 import React from 'react';
-import MonorepoTemplate from '../core/src';
+import Heade from '../core/src';
 
-test('renders learn react link', () => {
-  render(<MonorepoTemplate>learn react</MonorepoTemplate>);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+test('renders baseElement', () => {
+  const { debug, baseElement } = render(
+    <Heade>
+      <Heade.Title>learn react</Heade.Title>
+    </Heade>
+  );
+  expect(baseElement.innerHTML).toBe('<div></div>');
 });

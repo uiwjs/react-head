@@ -101,6 +101,13 @@ outputs:
 <!-- .... -->
 ```
 
+### Modify Favicon
+
+```jsx
+<Head.Link rel="icon" href="/favicon.ico" />
+<Head.Link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+```
+
 ## All Sub Components
 
 Elements that can be used inside the `<head>`:

@@ -16,7 +16,7 @@ export const HeadElement = <T extends ElementType<any> = 'link'>(props: { as?: T
       selecter = `meta[name="${name}"]:not([data-head])`;
     }
     if (props.as === 'meta' && props.charSet) {
-      selecter = `meta[charset]:not([data-head]`;
+      selecter = `meta[charset]:not([data-head])`;
     }
     if (selecter) {
       const dom = document.querySelector(selecter);

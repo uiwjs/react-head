@@ -1,7 +1,7 @@
 {
   "name": "@uiw/react-head",
   "version": "0.0.1",
-  "description": "Simple React package development project example template..",
+  "description": "React components will manage your changes to the document head",
   "author": "Kenny Wong <wowohoo@qq.com>",
   "homepage": "https://uiwjs.github.io/react-head",
   "repository": {

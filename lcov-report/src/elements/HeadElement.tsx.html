@@ -23,16 +23,16 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">88.23% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>15/17</span>
+                <span class='fraction'>17/17</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">53.33% </span>
+                <span class="strong">93.33% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>8/15</span>
+                <span class='fraction'>14/15</span>
             </div>
         
             
@@ -44,9 +44,9 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">88.23% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>15/17</span>
+                <span class='fraction'>17/17</span>
             </div>
         
             
@@ -94,28 +94,28 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">5x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { type ElementType, type ComponentPropsWithoutRef, useMemo } from 'react';
 import { createPortal } from 'react-dom';
@@ -128,16 +128,16 @@ export const HeadElement = &lt;T extends ElementType&lt;any&gt; = 'link'&gt;(pro
   useMemo(() =&gt; {
     const name = props.name;
     let selecter = '';
-    <span class="missing-if-branch" title="else path not taken" >E</span>if (props.as &amp;&amp; /(base|title)/.test(props.as as string)) {
+    if (props.as &amp;&amp; /(base|title)/.test(props.as as string)) {
       selecter = `${props.as}:not([data-head])`;
     }
-    <span class="missing-if-branch" title="if path not taken" >I</span>if (props.as === 'meta' &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >name)</span> {
-<span class="cstat-no" title="statement not covered" >      selecter = `meta[name="${name}"]:not([data-head])`;</span>
+    if (props.as === 'meta' &amp;&amp; name) {
+      selecter = `meta[name="${name}"]:not([data-head])`;
     }
-    <span class="missing-if-branch" title="if path not taken" >I</span>if (props.as === 'meta' &amp;&amp; <span class="branch-1 cbranch-no" title="branch not covered" >props.charSet)</span> {
-<span class="cstat-no" title="statement not covered" >      selecter = `meta[charset]:not([data-head]`;</span>
+    if (props.as === 'meta' &amp;&amp; props.charSet) {
+      selecter = `meta[charset]:not([data-head])`;
     }
-    <span class="missing-if-branch" title="else path not taken" >E</span>if (selecter) {
+    if (selecter) {
       const dom = document.querySelector(selecter);
       dom?.remove();
     }
@@ -151,7 +151,7 @@ export const HeadElement = &lt;T extends ElementType&lt;any&gt; = 'link'&gt;(pro
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2023-10-19T07:22:54.269Z
+                at 2023-10-19T08:37:58.311Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

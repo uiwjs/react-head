@@ -8,18 +8,18 @@ export const HeadElement = <T extends ElementType<any> = 'link'>(props: { as?: T
 
   useMemo(() => {
     const name = props.name;
-    let selecter = '';
+    let selector = '';
     if (props.as && /(base|title)/.test(props.as as string)) {
-      selecter = `${props.as}:not([data-head])`;
+      selector = `${props.as}:not([data-head])`;
     }
     if (props.as === 'meta' && name) {
-      selecter = `meta[name="${name}"]:not([data-head])`;
+      selector = `meta[name="${name}"]:not([data-head])`;
     }
     if (props.as === 'meta' && props.charSet) {
-      selecter = `meta[charset]:not([data-head])`;
+      selector = `meta[charset]:not([data-head])`;
     }
-    if (selecter) {
-      const dom = document.querySelector(selecter);
+    if (selector) {
+      const dom = document.querySelector(selector);
       dom?.remove();
     }
   }, []);

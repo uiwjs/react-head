@@ -21,17 +21,17 @@ import React, { useState } from "react";
 import Head from '@uiw/react-head';
 
 export default function App() {
-  const [title, setTitle] = useState("My Title");
-  const click = () => setTitle(title === 'My Title' ? 'Hello World' : 'My Title')
+  const [count, setCount] = useState(1);
+  const click = () => setCount(count + 1)
   return (
     <div className="container">
       <Head>
         <Head.Meta charSet="utf-8" />
-        <Head.Title>{title}</Head.Title>
+        <Head.Title>{count} React Head</Head.Title>
         <Head.Link rel="canonical" href="https://uiwjs.github.io" />
       </Head>
       <button onClick={click}>
-        Switch Title - "{title}"
+        Switch Title - "{count}"
       </button>
     </div>
   );

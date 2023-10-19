@@ -1,6 +1,6 @@
 {
   "name": "@uiw/react-head",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React components will manage your changes to the document head",
   "author": "Kenny Wong <wowohoo@qq.com>",
   "homepage": "https://uiwjs.github.io/react-head",

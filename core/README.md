@@ -91,14 +91,13 @@ export default function App() {
 }
 ```
 
-outputs:
+Outputs:
 
 ```html
 <head>
   <meta name="keywords" content="react-head,uiw,uiwjs">
   <meta name="description" content="1 React components will manage your changes to the document head.">
 </head>
-<!-- .... -->
 ```
 
 ### Modify Favicon
@@ -128,14 +127,12 @@ export default function App() {
 }
 ```
 
-outputs:
+Outputs:
 
 ```html
 <head>
-  <style>.box-test { color: red; }</style>
-  <style>.box-test { color: red; }</style>
+  <link data-head="true" rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤡</text></svg>" />
 </head>
-<!-- .... -->
 ```
 
 

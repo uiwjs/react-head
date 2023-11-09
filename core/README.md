@@ -108,6 +108,37 @@ outputs:
 <Head.Link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 ```
 
+```jsx mdx:preview
+import React, { useState } from "react";
+import Head from '@uiw/react-head';
+
+const favicon = `data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🦖</text></svg>`
+const favicon2 = `data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🤡</text></svg>`
+
+export default function App() {
+  const [show, setShow] = useState(false);
+  return (
+    <div>
+      <Head.Link rel="icon" type="image/svg+xml" href={show ? favicon : favicon2} />
+      <button onClick={() => setShow(!show)}>
+        Change Favicon {show ? "🦖" : "🤡"} {String(show)}
+      </button>
+    </div>
+  );
+}
+```
+
+outputs:
+
+```html
+<head>
+  <style>.box-test { color: red; }</style>
+  <style>.box-test { color: red; }</style>
+</head>
+<!-- .... -->
+```
+
+
 ## All Sub Components
 
 Elements that can be used inside the `<head>`:

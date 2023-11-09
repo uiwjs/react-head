@@ -18,6 +18,9 @@ export const HeadElement = <T extends ElementType<any> = 'link'>(props: { as?: T
     if (props.as === 'meta' && props.charSet) {
       selector = `meta[charset]:not([data-head])`;
     }
+    if (props.as === 'link' && props.rel == 'icon') {
+      selector = `link[rel="icon"]:not([data-head])`;
+    }
     if (selector) {
       const dom = document.querySelector(selector);
       dom?.remove();

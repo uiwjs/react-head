@@ -1,6 +1,7 @@
 react-head
 ===
 
+[![Buy me a coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-048754?logo=buymeacoffee)](https://jaywcjlove.github.io/#/sponsor) 
 [![CI](https://github.com/uiwjs/react-head/actions/workflows/ci.yml/badge.svg)](https://github.com/uiwjs/react-head/actions/workflows/ci.yml)
 [![npm version](https://img.shields.io/npm/v/@uiw/react-head.svg)](https://www.npmjs.com/package/@uiw/react-head)
 [![NPM Downloads](https://img.shields.io/npm/dm/@uiw/react-head.svg?style=flat&label=)](https://www.npmjs.com/package/@uiw/react-head)

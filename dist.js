@@ -12,6 +12,13 @@ return /******/ (() => { // webpackBootstrap
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ 3:
+/***/ ((module) => {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE__3__;
+
+/***/ }),
+
 /***/ 192:
 /***/ ((__unused_webpack_module, exports, __webpack_require__) => {
 
@@ -31,6 +38,13 @@ function q(c,a,g){var b,d={},e=null,h=null;void 0!==g&&(e=""+g);void 0!==a.key&&
 
 /***/ }),
 
+/***/ 442:
+/***/ ((module) => {
+
+module.exports = __WEBPACK_EXTERNAL_MODULE__442__;
+
+/***/ }),
+
 /***/ 540:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -40,20 +54,6 @@ if (true) {
   module.exports = __webpack_require__(192);
 } else {}
 
-
-/***/ }),
-
-/***/ 442:
-/***/ ((module) => {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE__442__;
-
-/***/ }),
-
-/***/ 3:
-/***/ ((module) => {
-
-module.exports = __WEBPACK_EXTERNAL_MODULE__3__;
 
 /***/ })
 
@@ -122,7 +122,7 @@ __webpack_require__.d(__webpack_exports__, {
   "default": () => (/* binding */ src)
 });
 
-;// CONCATENATED MODULE: ../node_modules/@babel/runtime/helpers/esm/typeof.js
+;// ../node_modules/@babel/runtime/helpers/esm/typeof.js
 function _typeof(o) {
   "@babel/helpers - typeof";
 
@@ -133,7 +133,7 @@ function _typeof(o) {
   }, _typeof(o);
 }
 
-;// CONCATENATED MODULE: ../node_modules/@babel/runtime/helpers/esm/toPrimitive.js
+;// ../node_modules/@babel/runtime/helpers/esm/toPrimitive.js
 
 function toPrimitive(t, r) {
   if ("object" != _typeof(t) || !t) return t;
@@ -146,7 +146,7 @@ function toPrimitive(t, r) {
   return ("string" === r ? String : Number)(t);
 }
 
-;// CONCATENATED MODULE: ../node_modules/@babel/runtime/helpers/esm/toPropertyKey.js
+;// ../node_modules/@babel/runtime/helpers/esm/toPropertyKey.js
 
 
 function toPropertyKey(t) {
@@ -154,7 +154,7 @@ function toPropertyKey(t) {
   return "symbol" == _typeof(i) ? i : i + "";
 }
 
-;// CONCATENATED MODULE: ../node_modules/@babel/runtime/helpers/esm/defineProperty.js
+;// ../node_modules/@babel/runtime/helpers/esm/defineProperty.js
 
 function _defineProperty(e, r, t) {
   return (r = toPropertyKey(r)) in e ? Object.defineProperty(e, r, {
@@ -165,7 +165,7 @@ function _defineProperty(e, r, t) {
   }) : e[r] = t, e;
 }
 
-;// CONCATENATED MODULE: ../node_modules/@babel/runtime/helpers/esm/objectSpread2.js
+;// ../node_modules/@babel/runtime/helpers/esm/objectSpread2.js
 
 function ownKeys(e, r) {
   var t = Object.keys(e);
@@ -191,18 +191,18 @@ function _objectSpread2(e) {
 
 // EXTERNAL MODULE: external {"root":"React","commonjs2":"react","commonjs":"react","amd":"react"}
 var external_root_React_commonjs2_react_commonjs_react_amd_react_ = __webpack_require__(442);
-;// CONCATENATED MODULE: ../node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js
+;// ../node_modules/@babel/runtime/helpers/esm/objectWithoutPropertiesLoose.js
 function _objectWithoutPropertiesLoose(r, e) {
   if (null == r) return {};
   var t = {};
   for (var n in r) if ({}.hasOwnProperty.call(r, n)) {
-    if (e.indexOf(n) >= 0) continue;
+    if (-1 !== e.indexOf(n)) continue;
     t[n] = r[n];
   }
   return t;
 }
 
-;// CONCATENATED MODULE: ../node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js
+;// ../node_modules/@babel/runtime/helpers/esm/objectWithoutProperties.js
 
 function _objectWithoutProperties(e, t) {
   if (null == e) return {};
@@ -211,7 +211,7 @@ function _objectWithoutProperties(e, t) {
     i = _objectWithoutPropertiesLoose(e, t);
   if (Object.getOwnPropertySymbols) {
     var n = Object.getOwnPropertySymbols(e);
-    for (r = 0; r < n.length; r++) o = n[r], t.indexOf(o) >= 0 || {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]);
+    for (r = 0; r < n.length; r++) o = n[r], -1 === t.indexOf(o) && {}.propertyIsEnumerable.call(e, o) && (i[o] = e[o]);
   }
   return i;
 }
@@ -220,9 +220,9 @@ function _objectWithoutProperties(e, t) {
 var external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_ = __webpack_require__(3);
 // EXTERNAL MODULE: ../node_modules/react/jsx-runtime.js
 var jsx_runtime = __webpack_require__(540);
-;// CONCATENATED MODULE: ./src/elements/HeadElement.tsx
+;// ./src/elements/HeadElement.tsx
 var _excluded=["as"];var HeadElement=function HeadElement(props){var _props$as=props.as,Com=_props$as===void 0?'link':_props$as,other=_objectWithoutProperties(props,_excluded);var reset=other;var comp=/*#__PURE__*/(0,jsx_runtime.jsx)(Com,_objectSpread2({"data-head":true},reset));(0,external_root_React_commonjs2_react_commonjs_react_amd_react_.useMemo)(function(){var name=props.name;var selector='';if(props.as&&/(base|title)/.test(props.as)){selector="".concat(props.as,":not([data-head])");}if(props.as==='meta'&&name){selector="meta[name=\"".concat(name,"\"]:not([data-head])");}if(props.as==='meta'&&props.charSet){selector="meta[charset]:not([data-head])";}if(props.as==='link'&&props.rel=='icon'){selector="link[rel=\"icon\"]:not([data-head])";}if(selector){var dom=document.querySelector(selector);dom===null||dom===void 0?void 0:dom.remove();}},[]);return/*#__PURE__*/(0,external_root_ReactDOM_commonjs2_react_dom_commonjs_react_dom_amd_react_dom_.createPortal)(comp,document.head);};
-;// CONCATENATED MODULE: ./src/index.tsx
+;// ./src/index.tsx
 var Internal=function Internal(_ref){var children=_ref.children;return children;};var Title=function Title(props){return/*#__PURE__*/(0,jsx_runtime.jsx)(HeadElement,_objectSpread2(_objectSpread2({},props),{},{as:"title"}));};var Meta=function Meta(props){return/*#__PURE__*/(0,jsx_runtime.jsx)(HeadElement,_objectSpread2(_objectSpread2({},props),{},{as:"meta"}));};var Link=function Link(props){return/*#__PURE__*/(0,jsx_runtime.jsx)(HeadElement,_objectSpread2(_objectSpread2({},props),{},{as:"link"}));};var Base=function Base(props){return/*#__PURE__*/(0,jsx_runtime.jsx)(HeadElement,_objectSpread2(_objectSpread2({},props),{},{as:"base"}));};var Style=function Style(props){return/*#__PURE__*/(0,jsx_runtime.jsx)(HeadElement,_objectSpread2(_objectSpread2({},props),{},{as:"style"}));};var Script=function Script(props){return/*#__PURE__*/(0,jsx_runtime.jsx)(HeadElement,_objectSpread2(_objectSpread2({},props),{},{as:"script"}));};var Head=Internal;Head.Meta=Meta;Head.Title=Title;Head.Link=Link;Head.Base=Base;Head.Style=Style;Head.Script=Script;/* harmony default export */ const src = (Head);
 /******/ 	return __webpack_exports__;
 /******/ })()
